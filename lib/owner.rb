@@ -66,6 +66,8 @@ class Owner
   end
   
   def sell_pets
-    @pets.each { |animal| change_mood(animal, "nervous") }
+    change_mood(:dogs, "nervous")
+    change_mood(:fishes, "nervous")
+    change_mood(:cats, "nervous")
   
 end
