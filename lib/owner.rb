@@ -49,7 +49,7 @@ class Owner
     @pets[:dogs] << newDog
   end
   
-  def make_happy
+  def make_happy(
     
   end
   
@@ -61,5 +61,8 @@ class Owner
     @pets[:cats].map { |cat| cat.mood = "happy" }
   end 
   
+  def feed_fish
+    
+  end
   
 end
