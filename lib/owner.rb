@@ -66,8 +66,7 @@ class Owner
   end
   
   def sell_pets
-    change_mood(:dogs, "nervous")
-    change_mood(:fishes, "nervous")
-    change_mood(:cats, "nervous")
+    @pets.map { |animal| change_mood(animal, "nervous") }
+  end
   
 end
