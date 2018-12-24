@@ -50,7 +50,7 @@ class Owner
   end
   
   def make_happy(hash)
-    @pets[:hash].map { |animal| animal.mood = "happy" }
+    @pets[hash].map { |animal| animal.mood = "happy" }
   end
   
   def walk_dogs
@@ -58,7 +58,7 @@ class Owner
   end
   
   def play_with_cats
-    make_happy(cats)
+    make_happy(:cats)
   end 
   
   # def feed_fish
