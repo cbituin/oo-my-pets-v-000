@@ -54,7 +54,7 @@ class Owner
   end
   
   def play_with_cats
-    @pets[:cats].map { |cat| dog.mood = "happy" }
+    @pets[:cats].map { |cat| cat.mood = "happy" }
   end 
   
   
