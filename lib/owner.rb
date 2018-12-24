@@ -1,3 +1,5 @@
+require 'pry'
+
 class Owner
 
   attr_accessor :name, :pets
