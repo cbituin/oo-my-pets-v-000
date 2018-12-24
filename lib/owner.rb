@@ -49,20 +49,20 @@ class Owner
     @pets[:dogs] << newDog
   end
   
-  def make_happy(hash)
+  def change_mood(hash, emotion)
     @pets[hash].map { |animal| animal.mood = "happy" }
   end
   
   def walk_dogs
-    make_happy(:dogs)
+    change_mood(:dogs, "happy")
   end
   
   def play_with_cats
-    make_happy(:cats)
+    change_mood(:cats, "happy")
   end 
   
   def feed_fish
-    make_happy(:fishes)
+    change_mood(:fishes, "happy")
   end
   
 end
