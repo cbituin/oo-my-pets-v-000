@@ -66,7 +66,7 @@ class Owner
   end
   
   def sell_pets
-    @pets.each { |animal| change_mood(animal, "nervous") }
+    @pets.tap { |animal| change_mood(animal, "nervous") }
   end
   
 end
