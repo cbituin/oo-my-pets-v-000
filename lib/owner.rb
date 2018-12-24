@@ -49,7 +49,8 @@ class Owner
     @pets[:dogs] << newDog
   end
   
-  def make_happy(
+  def make_happy(hash)
+    hash.map { |animal| animal.mood = "happy" }
     
   end
   
